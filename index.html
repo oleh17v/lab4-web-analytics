@@ -3,56 +3,282 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MailFlow Marketing</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>InsightFlow — Веб-аналітика та маркетингове зростання</title>
+  <meta
+    name="description"
+    content="InsightFlow — сайт про веб-аналітику, SEO та контент-маркетинг для бізнесу. Аналізуйте трафік, покращуйте конверсії та масштабуйте маркетинг."
+  />
+  <meta name="keywords" content="веб-аналітика, SEO, контент-маркетинг, Google Analytics, marketing analytics" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Analytics 4 -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Hotjar -->
+  <!--
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:YOUR_ID,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  -->
 </head>
 <body>
-  <header>
-    <h1>MailFlow Marketing</h1>
-    <p>Платформа для email-маркетингу, автоматизації розсилок і підвищення конверсії клієнтів.</p>
-    <a href="#features" class="btn">Можливості сервісу</a>
-    <a href="#contact" class="btn">Підключити сервіс</a>
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">InsightFlow</a>
+      <nav class="menu">
+        <a href="#services">Послуги</a>
+        <a href="#metrics">Метрики</a>
+        <a href="#pricing">Тарифи</a>
+        <a href="#blog">Блог</a>
+        <a href="#contact" class="btn btn-small">Залишити заявку</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="container">
-    <section id="features">
-      <h2 class="section-title">Основні можливості</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Email-розсилки</h3>
-          <p>Створення масових і персоналізованих email-кампаній для клієнтів.</p>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="badge">Digital Marketing & Analytics</p>
+          <h1>Веб-аналітика, SEO та контент-маркетинг для зростання бізнесу</h1>
+          <p class="hero-description">
+            Допомагаємо бізнесу аналізувати трафік, знаходити слабкі місця в
+            воронці продажів, покращувати видимість сайту в пошуку та збільшувати
+            кількість конверсій.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn">Замовити консультацію</a>
+            <a href="#services" class="btn btn-outline">Дізнатися більше</a>
+          </div>
         </div>
-        <div class="card">
-          <h3>Автоматизація</h3>
-          <p>Налаштування тригерних листів, welcome-ланцюжків і повторних нагадувань.</p>
-        </div>
-        <div class="card">
-          <h3>Аналітика кампаній</h3>
-          <p>Відстеження відкриттів, кліків, конверсій і ефективності email-стратегій.</p>
+
+        <div class="hero-card">
+          <h2>Ключові результати</h2>
+          <div class="stat-list">
+            <div class="stat-item">
+              <span class="stat-number">+42%</span>
+              <span class="stat-label">зростання органічного трафіку</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">+28%</span>
+              <span class="stat-label">покращення конверсії</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">-19%</span>
+              <span class="stat-label">зниження показника відмов</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2 class="section-title">Тарифний план</h2>
-      <div class="card pricing-card">
-        <h3>Business Plan</h3>
-        <div class="price">$49</div>
-        <p>До 10 000 контактів, автоматизація листів, базова аналітика та шаблони кампаній.</p>
-        <a href="#contact" class="btn">Спробувати сервіс</a>
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Послуги</p>
+          <h2>Що ми допомагаємо покращити</h2>
+          <p>
+            InsightFlow поєднує веб-аналітику, технічне SEO та контент-маркетинг
+            для системного зростання цифрових каналів.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Веб-аналітика</h3>
+            <p>
+              Налаштування Google Analytics, відстеження подій, аналіз джерел
+              трафіку, поведінки користувачів та ефективності сторінок.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>SEO-оптимізація</h3>
+            <p>
+              Аналіз технічних помилок, оптимізація швидкості, мета-тегів,
+              структури заголовків, внутрішньої перелінковки та контенту.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Контент-маркетинг</h3>
+            <p>
+              Підбір ключових слів, створення SEO-статей, оновлення посадкових
+              сторінок та покращення контентної стратегії бренду.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Залишити заявку</h2>
-      <p>Email: contact@mailflowmarketing.com</p>
-      <p>Телефон: +380 96 555 88 22</p>
-      <a href="#" class="btn">Замовити консультацію</a>
-    </section>
-  </div>
+    <section class="section section-alt" id="metrics">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Основні метрики</p>
+          <h2>Які показники ми аналізуємо</h2>
+        </div>
 
-  <footer>
-    <p>© 2026 MailFlow Marketing. Email marketing automation platform.</p>
+        <div class="metrics-grid">
+          <div class="metric-box">
+            <h3>Users / Sessions</h3>
+            <p>Кількість користувачів і сеансів для оцінки відвідуваності сайту.</p>
+          </div>
+          <div class="metric-box">
+            <h3>Bounce Rate</h3>
+            <p>Показник відмов для виявлення сторінок із слабкою взаємодією.</p>
+          </div>
+          <div class="metric-box">
+            <h3>Average Session Duration</h3>
+            <p>Середній час на сайті як індикатор залучення аудиторії.</p>
+          </div>
+          <div class="metric-box">
+            <h3>Conversion Rate</h3>
+            <p>Частка користувачів, які виконали цільову дію.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Тарифи</p>
+          <h2>Пакети для малого бізнесу та команд</h2>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Start</h3>
+            <p class="price">від 1500 грн</p>
+            <ul>
+              <li>Базовий SEO-аудит</li>
+              <li>Перевірка швидкості сайту</li>
+              <li>1 консультація</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline full-width">Обрати</a>
+          </article>
+
+          <article class="price-card featured">
+            <p class="popular">Популярний</p>
+            <h3>Growth</h3>
+            <p class="price">від 3500 грн</p>
+            <ul>
+              <li>SEO + аналітика</li>
+              <li>Контентні рекомендації</li>
+              <li>План покращення конверсії</li>
+            </ul>
+            <a href="#contact" class="btn full-width">Обрати</a>
+          </article>
+
+          <article class="price-card">
+            <h3>Pro</h3>
+            <p class="price">від 6000 грн</p>
+            <ul>
+              <li>Повний аудит сайту</li>
+              <li>Детальний план оптимізації</li>
+              <li>Підтримка та супровід</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline full-width">Обрати</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="blog">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Блог</p>
+          <h2>Корисні матеріали з digital-маркетингу</h2>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Як зменшити показник відмов</h3>
+            <p>
+              Практичні поради щодо структури сторінки, контенту та швидкості
+              завантаження для покращення поведінкових метрик.
+            </p>
+            <a href="#" class="text-link">Читати статтю</a>
+          </article>
+
+          <article class="card">
+            <h3>SEO для малого бізнесу</h3>
+            <p>
+              З чого почати пошукову оптимізацію, які сторінки варто
+              оптимізувати першими та як працювати з ключовими словами.
+            </p>
+            <a href="#" class="text-link">Читати статтю</a>
+          </article>
+
+          <article class="card">
+            <h3>Google Analytics 4 для сайту</h3>
+            <p>
+              Огляд основних звітів, подій, конверсій та ключових метрик для
+              аналізу ефективності веб-ресурсу.
+            </p>
+            <a href="#" class="text-link">Читати статтю</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">Контакти</p>
+          <h2>Залиште заявку на SEO-аудит</h2>
+          <p>
+            Заповніть коротку форму, і ми підготуємо пропозицію з аналізом
+            сайту, рекомендаціями щодо SEO та покращення веб-аналітики.
+          </p>
+        </div>
+
+        <form class="contact-form">
+          <label>
+            Ім’я
+            <input type="text" placeholder="Ваше ім’я" />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="example@email.com" />
+          </label>
+          <label>
+            Сайт
+            <input type="url" placeholder="https://example.com" />
+          </label>
+          <label>
+            Повідомлення
+            <textarea rows="5" placeholder="Коротко опишіть запит"></textarea>
+          </label>
+          <button type="submit" class="btn">Надіслати заявку</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© 2026 InsightFlow. Веб-аналітика, SEO та контент-маркетинг.</p>
+      <div class="footer-links">
+        <a href="#">Політика конфіденційності</a>
+        <a href="#">Контакти</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
